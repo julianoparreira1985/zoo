@@ -14,7 +14,6 @@ app.get("/dados", (req, res) => {
 });
 
 
-
 const { Pool } = require("pg");
 
 const pool = new Pool({
@@ -25,6 +24,10 @@ const pool = new Pool({
 });
 
 
+app.get("/hora", async (req, res) => {
+  const result = await pool.query("SELECT NOW()");
+  res.json(result.rows);
+});
 
 
 const PORT = process.env.PORT || 3000;
