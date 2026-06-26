@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/dados", (req, res) => {
-  res.json({ mensagem: "Olá do backend!" });
+  res.json({ mensagem: "Olá do backend do inferno!" });
 });
 
 const PORT = process.env.PORT || 3000;
