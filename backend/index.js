@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("API rodando 🚀");
+  res.send("API rodando 🚀 top, top!");
 });
 
 app.get("/dados", (req, res) => {
