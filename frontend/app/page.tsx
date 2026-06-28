@@ -35,7 +35,7 @@ export default function Home() {
         <p>Carregando dados...</p>
       )}
 
-      <h3>Hora do Servidor:</h3>
+      <h3>Hora do Banco de dados:</h3>
       {hora ? (
         <pre>{JSON.stringify(hora, null, 2)}</pre>
       ) : (
