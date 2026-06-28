@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/dados", (req, res) => {
-  res.json({ mensagem: "Olá do backend do Inferno!" });
+  res.json({ mensagem: "Backend Rodando Full!" });
 });
 
 
