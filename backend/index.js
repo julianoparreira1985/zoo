@@ -23,7 +23,6 @@ const pool = new Pool({
   }
 });
 
-
 app.get("/hora", async (req, res) => {
   const result = await pool.query("SELECT NOW()");
   res.json(result.rows);
