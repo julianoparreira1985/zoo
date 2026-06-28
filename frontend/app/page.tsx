@@ -7,10 +7,10 @@ export default function Home() {
   const [hora, setHora] = useState<any>(null);
 
   useEffect(() => {
-    fetch("https://zoo-4.onrender.com/dados")
+    fetch("https://zoo-4.onrender.com/hora")
       .then(res => res.json())
-      .then(data => setDados(data))
-      .then(hora => setHora(hora));
+      .then(data => setHora(data));
+      
   }, []);
 
   return (
